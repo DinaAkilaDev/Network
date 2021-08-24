@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\DB;
 
 class PostController extends Controller
 {
-
     public function CreatePost(Request $request)
     {
         $posts = Posts::orderBy('created_at', 'desc')->paginate(5);
